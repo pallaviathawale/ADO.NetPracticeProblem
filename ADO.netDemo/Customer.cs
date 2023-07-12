@@ -92,7 +92,26 @@ namespace ADO.netDemo
                 con.Close();
             }
         }
+        public static void Delete()
+        {
+            try
+            {
+                string query = "DELETE FROM Customer WHERE Id = 2";
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Data deleted from the table.");
+            }
+            catch (Exception e)
+            {
 
+                Console.WriteLine("Somethiing went Wrong." + e);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
     }
 }

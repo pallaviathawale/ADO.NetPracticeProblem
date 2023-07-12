@@ -7,7 +7,8 @@
             Console.WriteLine("Hello, World!");
             //Customer.CreateDatabase();
             //Customer.CreateDatabase();
-            Customer.insert();
+            //Customer.insert();
+            Customer.Delete();
         }
     }
 }
