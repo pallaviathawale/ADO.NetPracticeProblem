@@ -5,10 +5,9 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Customer.CreateDatabase();
             //Customer.CreateDatabase();
-           Customer.CreateTable();
-            //Customer.insert();
+            //Customer.CreateDatabase();
+            Customer.insert();
         }
     }
 }
