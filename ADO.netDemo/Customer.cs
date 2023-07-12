@@ -112,6 +112,26 @@ namespace ADO.netDemo
                 con.Close();
             }
         }
+        public static void UpdateTable()
+        {
+            try
+            {
+                string query = "UPDATE  Customer SET City = 'Akola' WHERE Id = 1";
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Data Updated into the table.");
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine("Somethiing went Wrong." + e);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
     }
 }

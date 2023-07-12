@@ -8,7 +8,8 @@
             //Customer.CreateDatabase();
             //Customer.CreateDatabase();
             //Customer.insert();
-            Customer.Delete();
+            //Customer.Delete();
+            Customer.UpdateTable();
         }
     }
 }
